@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import useTypewriter from "@/hooks/useTypewriter";
 import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
@@ -9,6 +10,19 @@ import { FaGithubSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function intro() {
+  const initialTextPart1 = "Hello, I'm ";
+  const name = "Subin,";
+  const initialTextPart2 = " a Software Engineer!";
+  const [typedTextPart1, isTypingCompletePart1] = useTypewriter(
+    initialTextPart1,
+    65
+  );
+  const [typedName, isTypedNameComplete] = useTypewriter(name, 65, isTypingCompletePart1);
+  const [typedTextPart2, isTypingCompletePart2] = useTypewriter(
+    initialTextPart2,
+    65,
+    isTypedNameComplete
+  );
   return (
     <section
       id="home"
@@ -27,6 +41,7 @@ export default function intro() {
               width={192}
               height={192}
               quality={95}
+              priority={true}
               className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
             <motion.span
@@ -45,26 +60,37 @@ export default function intro() {
           </motion.div>
         </div>
       </div>
-
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Subin.</span> I'm a {" "}
-        <span className="font-bold">software engineer</span> with experience in {" "}
-        <span className="font-bold">Finance, Software Development, </span> and  <span className="font-bold"> Product Management.</span>{" "} I enjoy building apps in{" "}
-        <span className="underline">React & NextJS</span> and have an interest in{" "}
-        <span className="italic font-bold">Web3 </span> and{" "}
-        <span className="italic font-bold"> Crypto Forensics.</span>
+        {typedTextPart1}
+        {isTypingCompletePart1 && <span className="font-bold underline">{typedName}</span>}
+        {isTypedNameComplete && typedTextPart2}
       </motion.h1>
-
+      {isTypingCompletePart2 && (
+        <motion.h2
+          className="mb-20 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, type: "spring", stiffness: 125 }}
+        >
+          I have experience in{" "}
+          <span className="font-bold"> Finance, Software Development, </span>{" "}
+          and <span className="font-bold"> Product Management.</span> I build
+          apps in <span className="underline">React & NextJS</span>, and I have an
+          interest in <span className="italic font-bold">Web3 </span> and{" "}
+          <span className="italic font-bold"> Crypto Forensics.</span>
+        </motion.h2>
+      )}
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
+          duration: 0.7,
+          delay: 4.25,
         }}
       >
         <Link
@@ -78,7 +104,7 @@ export default function intro() {
           href="/Resume.pdf"
           download
         >
-         Resume{" "}
+          Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
