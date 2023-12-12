@@ -15,7 +15,7 @@ export default function About() {
         transition={{
           type: "spring",
           stiffness: 75,
-          delay: 0.2,
+          delay: 0.15,
           duration: 0.7,
         }}
         className="text-lg sm:text-xl px-4"
