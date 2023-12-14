@@ -1,8 +1,8 @@
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
-import Experience from "@/components/experience";
-
+import Experience from "@/components/experience"
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -10,7 +10,9 @@ export default function Home() {
         <Intro />
         <SectionDivider />
         <About />
+        <SectionDivider />
         <Experience />
+        <Footer />
     </main>
   );
 }

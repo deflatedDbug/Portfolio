@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading";
 export default function About() {
   return (
     <motion.section
-      className="max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="max-w-[45rem] text-center leading-8 sm:mb-6 scroll-mt-28"
       id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function About() {
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{
           type: "spring",
           stiffness: 75,
