@@ -11,7 +11,7 @@ import {motion} from "framer-motion";
 import { experiencesData } from "@/lib/data";
 import { useTheme } from "@/context/theme-context";
 
-export default function Experience() {
+export default function ExperienceSection() {
   const { theme } = useTheme();
 
   return (
