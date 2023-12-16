@@ -9,7 +9,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-export default function intro() {
+export default function Intro() {
   const initialTextPart1 = "Hello, I'm ";
   const name = "Subin,";
   const initialTextPart2 = " a Software Engineer!";

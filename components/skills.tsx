@@ -21,7 +21,7 @@ export default function Skills() {
   };
   return (
     <div>
-      <section  className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+      <section  id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
         <SectionHeading>My Skills</SectionHeading>
         <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
           {skillsData.map((skill, index) => (
