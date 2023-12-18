@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import useTypewriter from "@/hooks/useTypewriter";
@@ -8,6 +8,7 @@ import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
+import ContactModal from "./modal/Modal";
 
 export default function Intro() {
   const initialTextPart1 = "Hello, I'm ";
@@ -17,12 +18,25 @@ export default function Intro() {
     initialTextPart1,
     65
   );
-  const [typedName, isTypedNameComplete] = useTypewriter(name, 65, isTypingCompletePart1);
+  const [typedName, isTypedNameComplete] = useTypewriter(
+    name,
+    65,
+    isTypingCompletePart1
+  );
   const [typedTextPart2, isTypingCompletePart2] = useTypewriter(
     initialTextPart2,
     65,
     isTypedNameComplete
   );
+
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(true);
+  };
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <section
       id="home"
@@ -66,7 +80,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         {typedTextPart1}
-        {isTypingCompletePart1 && <span className="font-bold underline">{typedName}</span>}
+        {isTypingCompletePart1 && (
+          <span className="font-bold underline">{typedName}</span>
+        )}
         {isTypedNameComplete && typedTextPart2}
       </motion.h1>
       {isTypingCompletePart2 && (
@@ -79,8 +95,8 @@ export default function Intro() {
           I have experience in{" "}
           <span className="font-bold"> Finance, Software Development, </span>{" "}
           and <span className="font-bold"> Product Management.</span> I build
-          apps in <span className="underline">React & NextJS</span>, and I have an
-          interest in <span className="italic font-bold">Web3 </span> and{" "}
+          apps in <span className="underline">React & NextJS</span>, and I have
+          an interest in <span className="italic font-bold">Web3 </span> and{" "}
           <span className="italic font-bold"> Crypto Forensics.</span>
         </motion.h2>
       )}
@@ -94,8 +110,9 @@ export default function Intro() {
         }}
       >
         <Link
-          href="#contact"
+          href="#"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={openModal}
         >
           Contact me here <BsArrowRight />
         </Link>
@@ -124,6 +141,12 @@ export default function Intro() {
           <FaGithubSquare />
         </a>
       </motion.div>
+      <ContactModal
+      open={showModal}
+      handleClose={closeModal}
+      >
+
+      </ContactModal>
     </section>
   );
 }
