@@ -15,7 +15,7 @@ export default function ExperienceSection() {
   const { theme } = useTheme();
 
   return (
-    <motion.section id="experience" className="scroll-mt-28 mt-24 mb-20 sm:mb-40" initial={{ opacity: 0, y: 50 }}
+    <motion.section id="experience" className="scroll-mt-28 mt-20 mb-20 sm:mb-20" initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.25 }}
     transition={{
@@ -29,7 +29,7 @@ export default function ExperienceSection() {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-            className='duration-300 hover:scale-110 md:hover:scale-125'
+            className='duration-300 hover:scale-110'
               contentStyle={{
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
