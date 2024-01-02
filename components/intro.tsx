@@ -101,7 +101,7 @@ export default function Intro() {
         </motion.h2>
       )}
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -111,13 +111,13 @@ export default function Intro() {
       >
         <Link
           href="#"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={openModal}
         >
           Contact me here <BsArrowRight />
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group border bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/Resume.pdf"
           download
         >
@@ -126,7 +126,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="hover:scale-110 active:scale-105 transition"
+          className="hover:scale-150 active:scale-125 transition"
           href="https://linkedin.com/in/subinlebow007"
           target="_blank"
         >
@@ -134,7 +134,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="hover:scale-110 active:scale-105 transition"
+          className="hover:scale-150 active:scale-125 transition"
           href="https://github.com/deflatedDbug"
           target="_blank"
         >
