@@ -29,7 +29,7 @@ export default function ExperienceSection() {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-            className='duration-300 hover:scale-125'
+            className='duration-300 hover:scale-110 md:hover:scale-125'
               contentStyle={{
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
