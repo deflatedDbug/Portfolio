@@ -46,7 +46,7 @@ export default function ExperienceSection() {
               }}
               date={item.date}
               icon={item.icon}
-              iconStyle={{
+              iconStyle={{ 
                 background:
                   theme === "light" ? "white" : "#28282B",
                 fontSize: "1.5rem",
