@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Subin Lebow",
   description:
-    "Subin is a recent new grad and is a a software engineer with 1.5 years of experience.",
+    "Subin is a recent new graduate from the University of Virginia and is a a software engineer with 1.5 years of relevant experience.",
 };
 
 export default function RootLayout({
