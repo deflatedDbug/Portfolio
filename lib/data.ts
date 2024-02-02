@@ -76,10 +76,14 @@ export const experiencesData = [
 ] as const;
 
 export const skillsData = [
+  "C",
+  "C++",
+  "TypeScript",
+  "JavaScript",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
+  "AWS",
+  "Azure",
   "React",
   "Next.js",
   "Node.js",
