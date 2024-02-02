@@ -18,14 +18,16 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  // {
-  //   name: "Projects",
-  //   hash: "#projects",
-  // },
+
   {
     name: "Skills",
     hash: "#skills",
   },
+
+  {
+    name: "Blog",
+    hash: "#blog",
+  }
 ] as const;
 
 export const experiencesData = [
@@ -44,7 +46,7 @@ export const experiencesData = [
     date: "Jan - May 2023",
   },
   {
-    title: "Product Management Intern",
+    title: "Software Engineer Intern",
     location: "Contemplative Sciences Center",
     description: "Led a diverse team of developers and UI/UX designers to build a mental health application for the UVA's student health department",
     icon: React.createElement(MdHealthAndSafety),
@@ -58,7 +60,7 @@ export const experiencesData = [
     date: "June - Aug 2022",
   },
   {
-    title: "Product Management Intern",
+    title: "Software Engineer Intern",
     location: "DataLemur",
     description: "Co-led the early-stage development of a SQL-learning platform in collaboration with Kernelics; delivered a testable protype in 2.5 months, beating the original 4-month timeline.",
     icon: React.createElement(AiOutlineConsoleSql),
