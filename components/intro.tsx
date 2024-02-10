@@ -8,7 +8,6 @@ import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
-import ContactModal from "./modal/Modal";
 
 export default function Intro() {
   const initialTextPart1 = "Hello, I'm ";
@@ -141,7 +140,7 @@ export default function Intro() {
           <FaGithubSquare />
         </a>
       </motion.div>
-      <ContactModal open={showModal} handleClose={closeModal}></ContactModal>
+     
     </section>
   );
 }
