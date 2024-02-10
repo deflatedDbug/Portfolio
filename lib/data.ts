@@ -39,7 +39,7 @@ export const experiencesData = [
   },
 
   {
-    title: "Software Engineer OC1",
+    title: "Software Engineer IC-1",
     location: "Oracle",
     description: "Returned to the OCI team after working with the Cloud team from a prior co-op internship",
     icon: React.createElement(LuGraduationCap),
