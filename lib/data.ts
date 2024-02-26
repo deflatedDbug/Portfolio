@@ -47,7 +47,7 @@ export const experiencesData = [
   {
     title: "Software Engineering Intern",
     location: "UVA, Contemplative Sciences Center",
-    description: "Developed a mindfulness application aimed at helping students mitigate stress while providng guidance to healthy lifestyle habits through interactive games/modules and daily video-shorts",
+    description: "Developed a mindfulness application aimed at helping students mitigate stress while providing guidance towards healthy lifestyle habits through interactive games/modules and daily video-shorts",
     icon: React.createElement(FaCode),
     date: "Sep 2022 - Feb 2023",
   },
