@@ -31,24 +31,9 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "MS Computer Science",
-    location: "Georgia Tech",
-    description: "Enrolled in GTech's Masters in Comp Sci with a focus on Machine Learning",
-    icon: React.createElement(LuGraduationCap),
-    date: "Sept 2024 - Dec 2025",
-  },
-
-  {
-    title: "Software Engineer IC-1",
-    location: "Oracle",
-    description: "Returned to the OCI team after working with the Cloud team from a prior co-op internship",
-    icon: React.createElement(LuGraduationCap),
-    date: "June 2023 - Jan 2024",
-  },
-  {
     title: "Graduation",
     location: "University of Virginia",
-    description: "Graduated from the University of Virginia with a degree in Economics and Computer Science",
+    description: "Graduated from the University of Virginia with a degree in Economics",
     icon: React.createElement(LuGraduationCap),
     date: "May 2023",
   },
@@ -58,6 +43,13 @@ export const experiencesData = [
     description: "Engineered an interactive crime mapping solution utilizing the city’s GIS database, providing real-time updates",
     icon: React.createElement(FaCode),
     date: "Jan - May 2023",
+  },
+  {
+    title: "Software Engineering Intern",
+    location: "UVA, Contemplative Sciences Center",
+    description: "Developed a mindfulness application aimed at helping students mitigate stress while providng guidance to healthy lifestyle habits through interactive games/modules and daily video-shorts",
+    icon: React.createElement(FaCode),
+    date: "Sep 2022 - Feb 2023",
   },
   {
     title: "Software Engineer Intern",
