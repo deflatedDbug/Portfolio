@@ -22,11 +22,6 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-
-  {
-    name: "Blog",
-    hash: "#blog",
-  }
 ] as const;
 
 export const experiencesData = [
@@ -59,7 +54,7 @@ export const experiencesData = [
     date: "June - Aug 2022",
   },
   {
-    title: "Product Management Intern",
+    title: "Software Engineer Intern",
     location: "DataLemur",
     description: "Co-led the early-stage development of a SQL-learning platform in collaboration with Kernelics",
     icon: React.createElement(AiOutlineConsoleSql),
