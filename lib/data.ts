@@ -28,7 +28,7 @@ export const experiencesData = [
   {
     title: "Graduation",
     location: "University of Virginia",
-    description: "Graduated from the University of Virginia with a degree in Economics",
+    description: "Graduated from the University of Virginia with a degree in Economics and Computer Science",
     icon: React.createElement(LuGraduationCap),
     date: "May 2023",
   },
