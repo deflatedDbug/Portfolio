@@ -15,16 +15,16 @@ export default function Intro() {
   const initialTextPart2 = " a Software Engineer!";
   const [typedTextPart1, isTypingCompletePart1] = useTypewriter(
     initialTextPart1,
-    65
+    25
   );
   const [typedName, isTypedNameComplete] = useTypewriter(
     name,
-    65,
+    25,
     isTypingCompletePart1
   );
   const [typedTextPart2, isTypingCompletePart2] = useTypewriter(
     initialTextPart2,
-    65,
+    25,
     isTypedNameComplete
   );
 
@@ -105,7 +105,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.7,
-          delay: 4.25,
+          delay: 2.25,
         }}
       >
         <Link
@@ -140,7 +140,6 @@ export default function Intro() {
           <FaGithubSquare />
         </a>
       </motion.div>
-     
     </section>
   );
 }
