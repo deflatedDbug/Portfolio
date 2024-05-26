@@ -11,7 +11,7 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.7,
-        delay: 5,
+        delay: 3.25,
       }}
     >
       <SectionHeading >
