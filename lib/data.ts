@@ -26,6 +26,13 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Graduate School",
+    location: "Georgia Tech",
+    description: "Accepted and enrolled in Georgia Tech's MS in Computer Science and Machine Learning",
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2024",
+  },
+  {
     title: "Graduation",
     location: "University of Virginia",
     description: "Graduated from the University of Virginia with a degree in Economics and Computer Science",
