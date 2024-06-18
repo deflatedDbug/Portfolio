@@ -50,7 +50,6 @@ const Model = () => {
       // Adjust opacity based on position
       modelRef.current.traverse((child) => {
         if (child instanceof THREE.Mesh) {
-           // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
           const distanceTravelled = startPosition - modelRef.current.position.x;
           const totalDistance = startPosition - endPosition;
           child.material.opacity = Math.max(
