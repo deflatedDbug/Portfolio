@@ -44,6 +44,7 @@ const Model = () => {
 
     if (modelRef.current) {
       // Move the model along the x-axis from center to left
+      if (!modelRef.current) return;
       modelRef.current.position.x -= speed;
 
       // Adjust opacity based on position
