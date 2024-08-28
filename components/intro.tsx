@@ -126,7 +126,7 @@ export default function Intro() {
 
         <a
           className="hover:scale-150 active:scale-125 transition"
-          href="https://linkedin.com/in/subinlebow007"
+          href="https://linkedin.com/in/subinlebow"
           target="_blank"
         >
           <BsLinkedin />
