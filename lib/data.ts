@@ -2,7 +2,6 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { FaCode } from "react-icons/fa6";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { RiBankFill } from "react-icons/ri";
 
 export const links = [
   {
@@ -28,14 +27,14 @@ export const experiencesData = [
   {
     title: "Graduate School",
     location: "Georgia Tech",
-    description: "Accepted and enrolled in Georgia Tech's MS in Computer Science and Machine Learning",
+    description: "Accepted and enrolled in Georgia Tech's Masters in Computer Science and Machine Learning",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2024",
   },
   {
     title: "Graduation",
     location: "University of Virginia",
-    description: "Graduated from the University of Virginia with a degree in Economics and Computer Science",
+    description: "Graduated from the University of Virginia with a degree in Economics",
     icon: React.createElement(LuGraduationCap),
     date: "May 2023",
   },
@@ -66,13 +65,6 @@ export const experiencesData = [
     description: "Co-led the early-stage development of a SQL-learning platform in collaboration with Kernelics",
     icon: React.createElement(AiOutlineConsoleSql),
     date: "Jan - May 2022",
-  },
-  {
-    title: "Investment Banking Intern",
-    location: "Morgan Stanley",
-    description: "Built out DCF models and conducted comprehensive research on emerging TMT trends",
-    icon: React.createElement(RiBankFill),
-    date: "June - Aug 2021",
   },
 ] as const;
 
